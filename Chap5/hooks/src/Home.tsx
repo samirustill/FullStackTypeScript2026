@@ -6,12 +6,14 @@ export type UserType = {
 };
 
 interface HomeProps {
+label: string;
 users?: UserType[];
 }
 
-export default function Home({ users }: HomeProps) {
+export default function Home({ label, users }: HomeProps) {
 return (
 <>
+ {label && <div>{label}</div>}
  {users?.map((user) => {
  return (
     <div

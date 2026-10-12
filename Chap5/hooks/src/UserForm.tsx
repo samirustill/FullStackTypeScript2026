@@ -1,6 +1,5 @@
 
-/*
-import { type useActionState, useState } from "react";
+import { useActionState, useState } from "react";
 import { type UserType } from "./Home";
 import { usersData } from "./UserData";
 
@@ -32,15 +31,15 @@ export default function UserForm() {
         }
     );
 
-    return (
-        <form
-            action={action}
-            style={{
-            display: "flex",
-            flexDirection: "column",
-        alignItems: "center",
-        }}
-></form>
+return (
+<form
+action={action}
+style={{
+display: "flex",
+flexDirection: "column",
+alignItems: "center",
+ }}
+>
 
 <div
 style={{
@@ -98,5 +97,3 @@ justifyContent: "space-between",
 </form>
  );
 }
-
-*/

@@ -1,6 +1,6 @@
-import { type ChangeEvent, useEffect, useMemo, useState } from "react";
+import { type ChangeEvent, useMemo, useState } from "react";
 import "./App.css";
-import Home, { type UserType } from "./Home";
+import { type UserType } from "./Home";
 import Awaitable from "./Awaitable";
 
 async function fetchData(url: string) {
@@ -22,6 +22,7 @@ function App() {
       id: <input type="text" value={id} onChange={onChange} />
       <Awaitable fetchPromise={fetchPromise} />
     </>
- );
+  );
 }
+
 export default App;
